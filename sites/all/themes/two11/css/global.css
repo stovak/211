@@ -1,0 +1,179 @@
+/* the basics */
+
+html { margin-bottom: 20px; }
+body {
+	font: 1.15em/1.25em "lucida grande", Helvetica, Arial, Sans-Serif; margin: 0px 0px 50px 0px;
+	background-image: url(../images/background.png); background-position: top center; background-repeat: repeat-x;
+}
+body.admin-menu { background-position: 0px 1.4em; }
+html > body { font: 13px/15px "lucida grande", Helvetica, Arial, Sans-Serif; }
+h1,h2,h3,h4,h5 { font-family: "Arial Black", Sans-Serif; font-weight: bolder; line-height: 1em; padding-top: 1em; color: black;  margin: 0px; padding: 0px 0px 1em 0px;}
+
+header, footer, aside, nav, article, section {  
+     display: block;  
+ }
+.break { clear: both; float: none; overflow:hidden; }
+
+h1 { font-size: 1.75em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1em; }
+
+.object-left { float: left; padding-right: 20px;}
+.object-right { float: right; padding-left: 20px;}
+.object-center { margin: 10px auto 10px auto; text-align: center; }
+nav ul { margin: 0px; padding: 0px; }
+nav ul li { display:inline; }
+nav ul li a { display:inline-block;   padding: 5px 8px; text-decoration:none; text-transform: capitalize;}
+nav ul li a:hover {  text-decoration:underline; }
+
+a, a:visited { color: #00488f; text-decoration: none; font-weight: bolder;  }
+a:hover { text-decoration: underline; }
+
+
+#page { width: 980px; margin: 0px auto; position:relative; }
+
+.break { clear: both; }
+
+header { height: 100px;  position: relative;width: 318px; height: 100px; z-index: 100; }
+header h1 {  margin: 0px; padding: 0px; line-height: 0px; position: ; }
+header h1 a { text-indent: -8685px; width: 318px; height: 100px; background: transparent url(../images/logo_white.png) 0 0 no-repeat; display:block; cursor: pointer;  overflow:hidden; }
+
+nav#main-nav { position: absolute; top: 67px; right: 0px;  width: 980px; z-index: 998;}
+nav#main-nav ul {  float:right;  }
+nav#main-nav ul li { float: left; padding: 3px 2px; margin: 0px 0px; text-transform: uppercase; position: relative;   }
+nav#main-nav ul li.last, nav#main-nav ul .subnav li { border-right: 0px; none; }
+nav#main-nav ul li a { color:white; text-decoration: none; font-size: 14px; font-family:  "Arial Narrow", Helvetica, Arial, Sans-Serif; }
+nav#main-nav ul li a:hover { text-decoration: underline;}
+nav#main-nav ul.subnav { position:absolute; top: 25px; left: 0px; background-color: #507647; padding: 0px 5px 0px 2px;  }
+nav#main-nav ul.subnav li { display:block; float:none; clear: both; overflow:hidden; }
+nav#main-nav ul li.active  { background-color: rgba(255,255,255,.3);  }
+
+nav#utility-nav { position:absolute; top: 0px; right: 0px; }
+nav#utility-nav ul li a { color:white; text-decoration: none; font-size: .7em; text-transform: uppercase; z-index: 999;}
+nav#utility-nav ul li a:hover { text-decoration: underline;}
+
+#masthead_images { position: relative; }
+#masthead_images  .slide-pager { position:absolute; right: 10px; bottom: 10px; z-index: 9999;  text-align: right; }
+#masthead_images  .slide-pager li { float: left;    }
+#masthead_images  .slide-pager li a { font-size: 36px; color: #999; padding: 0px;display:block;  text-decoration: none; }
+#masthead_images  .slide-pager li a.activeSlide { color: black;}
+
+footer {
+  clear: both;
+  float: none;
+  width: 900px;
+  padding: 15px 20px;
+  margin: 0 auto 10px auto;
+  font-size: 10px;
+  color: black;
+  background: #dfdfdf; position:relative; z-index: 998; }
+  footer ul#footer-nav { padding: 5px 0 5px 0; margin: 5px 0px 20px; border-top: 1px solid white; border-bottom: 1px solid white; overflow:hidden; overflow:hidden; clear: both; float:none; }
+  footer #social-links { padding: 0px 0px 20px 0px;}
+
+    footer ul#footer-nav li {
+      float:left; 
+      padding: 0 20px 0 0;
+      font: bold 13px Arial, Helvetica, sans-serif;
+      text-transform: uppercase; }
+    footer ul#footer-nav a { color: black; text-decoration:none; 
+		font-family:   "Arial Narrow", Helvetica, Arial, Sans-Serif;  font-size: 12px; font-weight: normal; }
+    footer ul#footer-nav a:hover { color: #666; text-decoration:underline;  }
+
+  footer ul.footer-subnav { padding: 0 0 15px 0; }
+    footer ul.footer-subnav li {
+      display: inline;
+      font-size: 9px; }
+    footer ul.footer-subnav a { color: black; font-family:   "Arial Narrow", Helvetica, Arial, Sans-Serif;  text-decoration:none;  }
+    footer ul.footer-subnav a:hover { color: #666; text-decoration:underline;  }
+
+  footer address { line-height: 150%; font-size: 12px;}
+
+#socialNet { position: absolute; right: 15px;  width: 170px; margin: 5px 0px 0px 0px;  }
+#socialNet .addthis_toolbox.addthis_default_style { text-align: right; }
+#socialNet #emailNewsletterIcon { float: left; cursor: pointer; width: 20px; height: 20px; background: transparent url(../images/email-icon.png) center center no-repeat; }
+#emailNewsletterEnroll { position: absolute; top: 30px; right: 0px; text-align: left; }
+#emailNewsletterEnroll form { padding: 0px; color: white;  font-family: "Arial Narrow", Arial, Sans-Serif; }
+
+
+#main { position:relative; float: none; clear:both; overflow:hidden; width: 940px; margin: 0px auto;  }
+#main #content { padding-top: 10px; }
+#main .class-page .attribute-body { padding: 20px; }
+body#index #main #content { padding-top: 0px; }
+body#index #main .class-page .attribute-body { padding: 0px; }
+#main .class-page .attribute-body p { padding: 5px 0px; }
+
+/* content-view-line */
+
+
+.content-view-children .content-view-line { overflow:hidden; }
+.content-view-line {
+	float: left;
+	padding: 0 10px 10px 0; width: 300px; overflow: hidden; }
+	.content-view-line  .attribute-photo {
+		float: left;
+		position: relative;
+		top: 10px;
+		margin: 0px 20px 0 0; }
+	.content-view-line .details {
+		position: relative;
+		float: left;
+		width: 180px;
+		min-height: 90px;
+		padding: 10px 0 39px 0;
+		border-bottom: 1px solid #b8dae9; }
+	.content-view-line .details.full-width { width: 220px; float:none; margin: 0px auto; }
+	.content-view-line.last  .details {
+		border-bottom: 0px none;
+	}
+	.content-view-line  h3 {
+		padding: 0 0 10px 0;
+		font-size: 24px; line-height: 24px; 
+		font-weight: normal;
+		color: #00488f; }
+		#main .content-view-line h3 a {
+			color: #00488f;
+			text-decoration: none; }
+	.content-view-line  p.actions {
+		position: absolute; right: 0px; bottom: 9px; z-index: 1; padding: 0; 
+		font-size: .8em; text-transform: uppercase; font-weight: bolder; }
+		
+		
+		
+		 #sponsors { }
+		 footer h3 { font-size: 8px; font-weight: normal; text-align: left; padding: 0px 0px 10px 0px; margin: 0px; color: #333; text-transform: uppercase; font-weight: normal;  }
+		 #sponsors .sponsor_list { text-align: left;  margin: 0px 0 10px 0; padding: 10px 0 0 0; float:none; overflow:hidden; clear:both;}
+		 #sponsors .sponsor_list li { float:left;  }
+		 #sponsors .sponsor_list li a { display:block;  height: 60px; text-indent: -999px; width: 60px; text-align: left; overflow: hidden;  margin: 0px 5px;} 
+		 #sponsors .sponsor_list li a#sponsor_pinellas { background: white url(../images/sponsor_pinellas.png) center center no-repeat;}
+		 #sponsors .sponsor_list li a#sponsor_hud { background: white url(../images/sponsor_hud.png) center center no-repeat; }
+		 #sponsors .sponsor_list li a#sponsor_jwb { background: white url(../images/sponsor_jwb.png) center center no-repeat; }
+		 #sponsors .sponsor_list li a#sponsor_uw { background: white url(../images/sponsor_uw.png) center center no-repeat; }
+		 #sponsors .sponsor_list li a#sponsor_adobe { background: white url(../images/sponsor_adobe.png) center center no-repeat; }
+		 #sponsors .sponsor_list li a#sponsor_coke { background: white url(../images/sponsor_coke.png) center center no-repeat; }
+		 #sponsors .sponsor_list li a#sponsor_mc { background: white url(../images/sponsor_mc.png) center center no-repeat; }
+		 #sponsors .sponsor_list li a#sponsor_bon { background: white url(../images/sponsor_bon.png) center center no-repeat; }
+		 #sponsors .sponsor_list li a#sponsor_alleghany { background: white url(../images/sponsor_alleghany.png) center center no-repeat; }
+		 #sponsors .sponsor_list li a#sponsor_pcch { background: white url(../images/sponsor_pcch.png) center center no-repeat; }
+
+		#ezwt {position: relative; z-index: 9999;}
+		
+
+
+#main #content .content-view-full ul { list-style: disc; list-style-position: inside; 
+	margin: 0px 0px 10px 25px; font-weight: normal; color: #666; text-indent: -15px; }
+#main #content .content-view-full ol { list-style: decimal; list-style-position: inside; 
+	margin: 0px 0px 10px 25px; font-weight: normal; color: #666; text-indent: -15px; }
+#index #main { padding-top: 34px; }
+#index #main #content h1 { display:none; }
+#main #content .content-view-full p { padding: 0px 0px 1em 0px;  color: #666;}
+
+#breadcrumb { height: 40px;  }
+#breadcrumb li {
+		display: inline; padding: 0; background: transparent;
+		font-size: 10px; text-transform: uppercase; color: white;  }
+#breadcrumb li a { font-size: 10px; text-transform: uppercase; color: white; text-decoration:none;  }
+#breadcrumb li a:hover { text-decoration: underline; }
+
+ul.sitemap { text-transform: capitalize; }
+

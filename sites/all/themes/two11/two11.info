@@ -1,0 +1,10 @@
+name = Two11
+description = Customized for 211TampaBay
+core = 7.x
+
+stylesheets[all][] = css/global.css
+
+project = "211"
+version = "7.x-1.1"
+core = "7.x"
+
